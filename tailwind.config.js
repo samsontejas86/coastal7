@@ -7,19 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        'coastal-blue': '#1E40AF',
-        'coastal-teal': '#14B8A6',
-        'coastal-green': '#10B981',
+        'coastal-dark': '#063342',
+        'coastal-teal': '#16BAAD',
+        'coastal-blue': '#0EA5E9',
         'coastal-light-blue': '#E0F2FE',
-        'coastal-dark': '#1F2937',
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'inter': ['Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-out',
-        'float': 'float 3s ease-in-out infinite',
+        'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -32,7 +31,7 @@ export default {
         },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
+          '50%': { transform: 'translateY(-20px)' },
         },
       },
     },

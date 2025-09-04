@@ -1,71 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, sans-serif;
   }
   
   body {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 400;
-  }
-
-  /* Enhanced font weights for better typography */
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    letter-spacing: -0.025em;
+    @apply antialiased;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-coastal-teal text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    @apply bg-coastal-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
   }
   
   .btn-secondary {
-    @apply border-2 border-coastal-teal text-coastal-teal bg-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-coastal-teal hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
-  }
-  
-  .card {
-    @apply bg-white/90 backdrop-blur-sm border border-white/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105;
-  }
-  
-  .gradient-bg {
-    @apply bg-gradient-to-br from-coastal-light-blue via-white to-coastal-light-blue;
-  }
-  
-  .hero-gradient {
-    @apply bg-gradient-to-br from-coastal-light-blue via-white to-blue-50;
+    @apply bg-transparent text-coastal-teal border-2 border-coastal-teal px-6 py-3 rounded-lg font-semibold hover:bg-coastal-teal hover:text-white transition-all duration-300 transform hover:scale-105;
   }
   
   .wavy-pattern {
-    background: linear-gradient(135deg, rgba(224, 242, 254, 0.3) 0%, rgba(20, 184, 166, 0.1) 50%, rgba(224, 242, 254, 0.3) 100%);
-  }
-
-  /* Glass morphism effects */
-  .glass-nav {
-    @apply bg-white/10 backdrop-blur-md border border-white/20;
-  }
-
-  .glass-card {
-    @apply bg-white/90 backdrop-blur-md border border-white/30 shadow-2xl;
-  }
-
-  /* Enhanced button gradients */
-  .btn-gradient {
-    @apply bg-gradient-to-r from-coastal-teal to-teal-500 hover:from-teal-600 hover:to-teal-700;
-  }
-
-  /* Navigation link hover effects */
-  .nav-link {
-    @apply relative group font-semibold;
-  }
-
-  .nav-link::after {
-    content: '';
-    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-coastal-teal transition-all duration-300 group-hover:w-full;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 }

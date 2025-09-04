@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Play, Brain, Cpu, Package, CheckCircle } from 'lucide-react';
+import { Brain, Cpu, Package, CheckCircle } from 'lucide-react';
 
 const HomePage = () => {
   const [activeTab, setActiveTab] = useState('b2b'); // Default to B2B Solutions
