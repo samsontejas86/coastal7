@@ -30,8 +30,22 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen overflow-x-hidden">
+      {/* Full Page Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/assets/images/Home.png" 
+          alt="Background" 
+          className="w-full object-cover object-top"
+          style={{
+            width: '100%',
+            height: '100%',
+            minHeight: '100%'
+          }}
+        />
+      </div>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-screen flex items-center pt-2">
+      <section className="relative overflow-hidden min-h-screen flex items-center pt-2 z-10">
 
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 lg:py-20 relative z-10">
