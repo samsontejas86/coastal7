@@ -2,6 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
+import B2BSolutionsPage from './pages/B2BSolutionsPage';
+import B2CSolutionsPage from './pages/B2CSolutionsPage';
+import CareersPage from './pages/CareersPage';
+import BlogPage from './pages/BlogPage';
 
 function App() {
   return (
@@ -16,6 +20,8 @@ function App() {
               </main>
             </>
           } />
+          <Route path="/products/b2b-solutions" element={<B2BSolutionsPage />} />
+          <Route path="/products/b2c-solutions" element={<B2CSolutionsPage />} />
           <Route path="/products" element={
             <>
               <Header />
@@ -33,6 +39,7 @@ function App() {
               </main>
             </>
           } />
+          <Route path="/resources/blog" element={<BlogPage />} />
           <Route path="/resources" element={
             <>
               <Header />
@@ -41,14 +48,7 @@ function App() {
               </main>
             </>
           } />
-          <Route path="/careers" element={
-            <>
-              <Header />
-              <main>
-                <div className="min-h-screen flex items-center justify-center text-2xl font-semibold text-coastal-dark">Careers Page - Coming Soon</div>
-              </main>
-            </>
-          } />
+          <Route path="/careers" element={<CareersPage />} />
           <Route path="/about" element={
             <>
               <Header />

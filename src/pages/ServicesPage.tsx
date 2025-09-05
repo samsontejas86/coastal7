@@ -7,6 +7,8 @@ const ServicesPage = () => {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeService, setActiveService] = useState('automation');
+  const [productsTimeout, setProductsTimeout] = useState<NodeJS.Timeout | null>(null);
+  const [resourcesTimeout, setResourcesTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const services = [
     { id: 'automation', name: 'Automation' },
@@ -24,6 +26,36 @@ const ServicesPage = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleProductsMouseEnter = () => {
+    if (productsTimeout) {
+      clearTimeout(productsTimeout);
+      setProductsTimeout(null);
+    }
+    setIsProductsOpen(true);
+  };
+
+  const handleProductsMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsProductsOpen(false);
+    }, 200);
+    setProductsTimeout(timeout);
+  };
+
+  const handleResourcesMouseEnter = () => {
+    if (resourcesTimeout) {
+      clearTimeout(resourcesTimeout);
+      setResourcesTimeout(null);
+    }
+    setIsResourcesOpen(true);
+  };
+
+  const handleResourcesMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsResourcesOpen(false);
+    }, 200);
+    setResourcesTimeout(timeout);
+  };
 
   return (
     <div className="relative">
@@ -79,17 +111,20 @@ const ServicesPage = () => {
               <div className="relative group">
                 <button 
                   className="flex items-center text-coastal-dark hover:text-coastal-teal transition-colors font-medium text-base"
-                  onMouseEnter={() => setIsProductsOpen(true)}
-                  onMouseLeave={() => setIsProductsOpen(false)}
+                  onMouseEnter={handleProductsMouseEnter}
+                  onMouseLeave={handleProductsMouseLeave}
                 >
                   Products
                   <ChevronDown className="ml-1.5 w-4 h-4" />
                 </button>
                 {isProductsOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/30 py-2">
-                    <Link to="/products/ai-solutions" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">AI Solutions</Link>
-                    <Link to="/products/automation" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">Automation</Link>
-                    <Link to="/products/quantum" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">Quantum Computing</Link>
+                  <div 
+                    className="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/30 py-2"
+                    onMouseEnter={handleProductsMouseEnter}
+                    onMouseLeave={handleProductsMouseLeave}
+                  >
+                    <Link to="/products/b2b-solutions" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">B2B Solutions</Link>
+                    <Link to="/products/b2c-solutions" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">B2C Solutions</Link>
                   </div>
                 )}
               </div>
@@ -107,14 +142,18 @@ const ServicesPage = () => {
               <div className="relative group">
                 <button 
                   className="flex items-center text-coastal-dark hover:text-coastal-teal transition-colors font-medium text-base"
-                  onMouseEnter={() => setIsResourcesOpen(true)}
-                  onMouseLeave={() => setIsResourcesOpen(false)}
+                  onMouseEnter={handleResourcesMouseEnter}
+                  onMouseLeave={handleResourcesMouseLeave}
                 >
                   Resources
                   <ChevronDown className="ml-1.5 w-4 h-4" />
                 </button>
                 {isResourcesOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/30 py-2">
+                  <div 
+                    className="absolute top-full left-0 mt-2 w-48 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/30 py-2"
+                    onMouseEnter={handleResourcesMouseEnter}
+                    onMouseLeave={handleResourcesMouseLeave}
+                  >
                     <Link to="/resources/blog" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">Blog</Link>
                     <Link to="/resources/whitepapers" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">Whitepapers</Link>
                     <Link to="/resources/case-studies" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">Case Studies</Link>
