@@ -283,114 +283,87 @@ const HomePage = () => {
 
       {/* AI Domains We're Revolutionizing Section */}
       <section className="py-16 relative overflow-hidden">
-        {/* Header Section */}
-        <div className="py-16 relative">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 tracking-tight">
-              <span className="text-coastal-dark">AI Domains</span>{' '}
-              <span className="text-coastal-teal bg-gradient-to-r from-coastal-teal to-teal-500 bg-clip-text text-transparent">
-                We're Revolutionizing
-              </span>
-            </h2>
-            
-            <p className="text-base text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
-              Discover our comprehensive suite of AI solutions designed to transform businesses and enhance human experiences across multiple domains.
-            </p>
-          </div>
+        <div className="py-8 relative text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight">
+            <span className="text-coastal-dark">AI Domains</span>{' '}
+            <span className="text-coastal-teal bg-gradient-to-r from-coastal-teal to-teal-500 bg-clip-text text-transparent">
+              We're Revolutionizing
+            </span>
+          </h2>
+          <p className="text-base text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
+            Discover our comprehensive suite of AI solutions designed to transform businesses and enhance human experiences across multiple domains.
+          </p>
         </div>
-
-        {/* AI Domains Grid - No Central Icon */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          {/* AI Domains Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-            {/* Left Side - Names on Left, Icons on Right */}
-            <div className="space-y-6">
-              {/* Retail */}
-              <div className="relative">
-                <div className="bg-gradient-to-r from-coastal-teal to-teal-500 rounded-2xl p-6 shadow-lg border-2 border-white/30 backdrop-blur-sm">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="text-lg font-bold text-white">Retail</h3>
-                    </div>
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
-                    </svg>
-                  </div>
-                </div>
+        <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-between mt-8 space-y-6 md:space-y-0">
+          {/* Left Column - Text and Icons in a vertical list */}
+          <div className="flex flex-col space-y-8 pr-4 pl-16 md:pl-32">
+            {/* Retail */}
+            <div className="flex justify-end items-center w-full max-w-[400px]">
+              <div className="w-32 text-right pr-4">
+                <span className="font-semibold text-coastal-dark text-lg">Retail</span>
               </div>
-
-              {/* Technology */}
-              <div className="relative">
-                <div className="bg-gradient-to-r from-coastal-teal to-teal-500 rounded-2xl p-6 shadow-lg border-2 border-white/30 backdrop-blur-sm">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="text-lg font-bold text-white">Technology</h3>
-                    </div>
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M21 16H3V4H21M21 2H3C1.89 2 1 2.89 1 4V16A2 2 0 0 0 3 18H10V20H8V22H16V20H14V18H21A2 2 0 0 0 23 16V4C23 2.89 22.1 2 21 2M12 8.5C10.62 8.5 9.5 9.62 9.5 11S10.62 13.5 12 13.5S14.5 12.38 14.5 11S13.38 8.5 12 8.5Z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-
-              {/* Media & Entertainment */}
-              <div className="relative">
-                <div className="bg-gradient-to-r from-coastal-teal to-teal-500 rounded-2xl p-6 shadow-lg border-2 border-white/30 backdrop-blur-sm">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="text-lg font-bold text-white">Media & Entertainment</h3>
-                    </div>
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2L2 7L12 12L22 7L12 2M2 17L12 22L22 17V7L12 12L2 7V17M12 12L12 22"/>
-                    </svg>
-                  </div>
-                </div>
+              <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center">
+                <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
               </div>
             </div>
 
-            {/* Right Side - Icons on Left, Names on Right */}
-            <div className="space-y-6">
-              {/* Healthcare */}
-              <div className="relative">
-                <div className="bg-gradient-to-r from-coastal-teal to-teal-500 rounded-2xl p-6 shadow-lg border-2 border-white/30 backdrop-blur-sm">
-                  <div className="flex items-center justify-between">
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                    </svg>
-                    <div>
-                      <h3 className="text-lg font-bold text-white">Healthcare</h3>
-                    </div>
-                  </div>
-                </div>
+            {/* Technology */}
+            <div className="flex justify-end items-center w-full max-w-[400px]">
+              <div className="w-32 text-right pr-4">
+                <span className="font-semibold text-coastal-dark text-lg">Technology</span>
               </div>
+              <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center">
+                <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 16H3V4H21M21 2H3C1.89 2 1 2.89 1 4V16A2 2 0 0 0 3 18H10V20H8V22H16V20H14V18H21A2 2 0 0 0 23 16V4C23 2.89 22.1 2 21 2M12 8.5C10.62 8.5 9.5 9.62 9.5 11S10.62 13.5 12 13.5S14.5 12.38 14.5 11S13.38 8.5 12 8.5Z"/>
+                </svg>
+              </div>
+            </div>
 
-              {/* Finance */}
-              <div className="relative">
-                <div className="bg-gradient-to-r from-coastal-teal to-teal-500 rounded-2xl p-6 shadow-lg border-2 border-white/30 backdrop-blur-sm">
-                  <div className="flex items-center justify-between">
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97c0-.33-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.22-.08-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98c0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65z"/>
-                    </svg>
-                    <div>
-                      <h3 className="text-lg font-bold text-white">Finance</h3>
-                    </div>
-                  </div>
-                </div>
+            {/* Media & Entertainment */}
+            <div className="flex justify-end items-center w-full max-w-[400px]">
+              <div className="w-32 text-right pr-4">
+                <span className="font-semibold text-coastal-dark text-lg">Media & Entertainment</span>
               </div>
+              <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center">
+                <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L2 7L12 12L22 7L12 2M2 17L12 22L22 17V7L12 12L2 7V17M12 12L12 22"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          {/* Right Column - Icons and Text in a vertical list */}
+          <div className="flex flex-col space-y-8 pr-8 md:pr-16">
+            {/* Healthcare */}
+            <div className="flex items-center w-full max-w-[400px]">
+              <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center mr-4">
+                <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </div>
+              <span className="font-semibold text-coastal-dark text-lg">Healthcare</span>
+            </div>
 
-              {/* Manufacturing */}
-              <div className="relative">
-                <div className="bg-gradient-to-r from-coastal-teal to-teal-500 rounded-2xl p-6 shadow-lg border-2 border-white/30 backdrop-blur-sm">
-                  <div className="flex items-center justify-between">
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M6 2h12v2H6V2zm0 18h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6V6z"/>
-                    </svg>
-                    <div>
-                      <h3 className="text-lg font-bold text-white">Manufacturing</h3>
-                    </div>
-                  </div>
-                </div>
+            {/* Finance */}
+            <div className="flex items-center w-full max-w-[400px]">
+              <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center mr-4">
+                <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97c0-.33-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.22-.08-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98c0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65z"/>
+                </svg>
               </div>
+              <span className="font-semibold text-coastal-dark text-lg">Finance</span>
+            </div>
+
+            {/* Manufacturing */}
+            <div className="flex items-center w-full max-w-[400px]">
+              <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center mr-4">
+                <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6 2h12v2H6V2zm0 18h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6V6z"/>
+                </svg>
+              </div>
+              <span className="font-semibold text-coastal-dark text-lg">Manufacturing</span>
             </div>
           </div>
         </div>

@@ -9,8 +9,8 @@ const BlogPage: React.FC = () => {
         className="absolute inset-0 w-full h-full z-0"
         style={{
           backgroundImage: 'url(/assets/images/Resources-Blogsbg.png)',
-          backgroundSize: 'contain',
-          backgroundPosition: 'top left',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           minHeight: '100vh'
         }}
