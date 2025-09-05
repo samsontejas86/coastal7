@@ -285,29 +285,29 @@ const HomePage = () => {
       <section className="py-16 relative overflow-hidden">
         <div className="py-8 relative text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 tracking-tight">
-            <span className="text-coastal-dark">AI Domains</span>{' '}
-            <span className="text-coastal-teal bg-gradient-to-r from-coastal-teal to-teal-500 bg-clip-text text-transparent">
-              We're Revolutionizing
-            </span>
-          </h2>
-          <p className="text-base text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
-            Discover our comprehensive suite of AI solutions designed to transform businesses and enhance human experiences across multiple domains.
-          </p>
-        </div>
+              <span className="text-coastal-dark">AI Domains</span>{' '}
+              <span className="text-coastal-teal bg-gradient-to-r from-coastal-teal to-teal-500 bg-clip-text text-transparent">
+                We're Revolutionizing
+              </span>
+            </h2>
+            <p className="text-base text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
+              Discover our comprehensive suite of AI solutions designed to transform businesses and enhance human experiences across multiple domains.
+            </p>
+          </div>
         <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-between mt-8 space-y-6 md:space-y-0">
           {/* Left Column - Text and Icons in a vertical list */}
           <div className="flex flex-col space-y-8 pr-4 pl-16 md:pl-32">
-            {/* Retail */}
+              {/* Retail */}
             <div className="flex justify-end items-center w-full max-w-[400px]">
               <div className="w-32 text-right pr-4">
                 <span className="font-semibold text-coastal-dark text-lg">Retail</span>
-              </div>
+                    </div>
               <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center">
                 <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
-                </svg>
-              </div>
-            </div>
+                      <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                  </div>
+                </div>
 
             {/* Technology */}
             <div className="flex justify-end items-center w-full max-w-[400px]">
@@ -316,10 +316,10 @@ const HomePage = () => {
               </div>
               <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center">
                 <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M21 16H3V4H21M21 2H3C1.89 2 1 2.89 1 4V16A2 2 0 0 0 3 18H10V20H8V22H16V20H14V18H21A2 2 0 0 0 23 16V4C23 2.89 22.1 2 21 2M12 8.5C10.62 8.5 9.5 9.62 9.5 11S10.62 13.5 12 13.5S14.5 12.38 14.5 11S13.38 8.5 12 8.5Z"/>
-                </svg>
-              </div>
-            </div>
+                      <path d="M21 16H3V4H21M21 2H3C1.89 2 1 2.89 1 4V16A2 2 0 0 0 3 18H10V20H8V22H16V20H14V18H21A2 2 0 0 0 23 16V4C23 2.89 22.1 2 21 2M12 8.5C10.62 8.5 9.5 9.62 9.5 11S10.62 13.5 12 13.5S14.5 12.38 14.5 11S13.38 8.5 12 8.5Z"/>
+                    </svg>
+                  </div>
+                </div>
 
             {/* Media & Entertainment */}
             <div className="flex justify-end items-center w-full max-w-[400px]">
@@ -328,40 +328,40 @@ const HomePage = () => {
               </div>
               <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center">
                 <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2L2 7L12 12L22 7L12 2M2 17L12 22L22 17V7L12 12L2 7V17M12 12L12 22"/>
-                </svg>
+                      <path d="M12 2L2 7L12 12L22 7L12 2M2 17L12 22L22 17V7L12 12L2 7V17M12 12L12 22"/>
+                    </svg>
+                </div>
               </div>
             </div>
-          </div>
-          
+
           {/* Right Column - Icons and Text in a vertical list */}
           <div className="flex flex-col space-y-8 pr-8 md:pr-16">
-            {/* Healthcare */}
+              {/* Healthcare */}
             <div className="flex items-center w-full max-w-[400px]">
               <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center mr-4">
                 <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
               </div>
               <span className="font-semibold text-coastal-dark text-lg">Healthcare</span>
-            </div>
+              </div>
 
-            {/* Finance */}
+              {/* Finance */}
             <div className="flex items-center w-full max-w-[400px]">
               <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center mr-4">
                 <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97c0-.33-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.22-.08-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98c0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65z"/>
-                </svg>
+                      <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97c0-.33-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.22-.08-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98c0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65z"/>
+                    </svg>
               </div>
               <span className="font-semibold text-coastal-dark text-lg">Finance</span>
-            </div>
+              </div>
 
-            {/* Manufacturing */}
+              {/* Manufacturing */}
             <div className="flex items-center w-full max-w-[400px]">
               <div className="bg-coastal-teal rounded-lg w-12 h-12 flex-shrink-0 flex items-center justify-center mr-4">
                 <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M6 2h12v2H6V2zm0 18h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6V6z"/>
-                </svg>
+                      <path d="M6 2h12v2H6V2zm0 18h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6v-2zm0-2h12v2H6V6z"/>
+                    </svg>
               </div>
               <span className="font-semibold text-coastal-dark text-lg">Manufacturing</span>
             </div>
@@ -430,7 +430,7 @@ const HomePage = () => {
                   Enterprise QA Validation Platform that turns AI uncertainty into Business Confidence.
                 </p>
                 <div className="text-left">
-                  <a href="https://example.com/agentosaur" className="inline-block bg-coastal-teal text-white px-4 py-2 rounded-lg font-medium hover:bg-teal-600 transition-colors duration-300 text-sm">
+                  <a href="https://example.com/agentosaur" className="inline-block bg-gradient-to-r from-[#063342] to-[#16BAAD] text-white px-4 py-2 rounded-lg font-medium hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300 text-sm">
                     Learn More
                   </a>
                 </div>
@@ -454,7 +454,7 @@ const HomePage = () => {
                   A centralized AI-driven Asset Management Tool that helps teams create brand assets effortlessly.
                 </p>
                 <div className="text-left">
-                  <a href="https://example.com/brandosaur" className="inline-block bg-coastal-teal text-white px-4 py-2 rounded-lg font-medium hover:bg-teal-600 transition-colors duration-300 text-sm">
+                  <a href="https://example.com/brandosaur" className="inline-block bg-gradient-to-r from-[#063342] to-[#16BAAD] text-white px-4 py-2 rounded-lg font-medium hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300 text-sm">
                     Learn More
                   </a>
                 </div>
@@ -478,7 +478,7 @@ const HomePage = () => {
                   Autonomous Agents that handle business workflows across departments.
                 </p>
                 <div className="text-left">
-                  <a href="https://example.com/enterprise-ai" className="inline-block bg-coastal-teal text-white px-4 py-2 rounded-lg font-medium hover:bg-teal-600 transition-colors duration-300 text-sm">
+                  <a href="https://example.com/enterprise-ai" className="inline-block bg-gradient-to-r from-[#063342] to-[#16BAAD] text-white px-4 py-2 rounded-lg font-medium hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300 text-sm">
                     Learn More
                   </a>
                 </div>
@@ -502,7 +502,7 @@ const HomePage = () => {
                   Complete framework for organizational AI Integration.
                 </p>
                 <div className="text-left">
-                  <a href="https://example.com/digital-toolkit" className="inline-block bg-coastal-teal text-white px-4 py-2 rounded-lg font-medium hover:bg-teal-600 transition-colors duration-300 text-sm">
+                  <a href="https://example.com/digital-toolkit" className="inline-block bg-gradient-to-r from-[#063342] to-[#16BAAD] text-white px-4 py-2 rounded-lg font-medium hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300 text-sm">
                     Learn More
                   </a>
                 </div>
@@ -629,7 +629,7 @@ const HomePage = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button className="bg-gradient-to-r from-coastal-teal to-teal-500 text-white px-6 py-3 rounded-lg font-semibold text-base hover:from-teal-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                <button className="bg-gradient-to-r from-[#063342] to-[#16BAAD] text-white px-6 py-3 rounded-lg font-semibold text-base hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                   Start Your AI Journey
                 </button>
               </div>
@@ -672,7 +672,7 @@ const HomePage = () => {
                     <a href="/products" className="block text-gray-300 hover:text-white transition-colors duration-300 text-sm">Products</a>
                   </div>
                   <div className="space-y-3">
-                    <a href="/blog" className="block text-gray-300 hover:text-white transition-colors duration-300 text-sm">Blog</a>
+                    <a href="https://coastalsevenconsulting.medium.com/" target="_blank" rel="noopener noreferrer" className="block text-gray-300 hover:text-white transition-colors duration-300 text-sm">Blog</a>
                     <a href="/careers" className="block text-gray-300 hover:text-white transition-colors duration-300 text-sm">Careers</a>
                     <a href="/contact" className="block text-gray-300 hover:text-white transition-colors duration-300 text-sm">Contact Us</a>
                   </div>
@@ -684,28 +684,28 @@ const HomePage = () => {
                 <h3 className="text-lg font-bold text-white">Join us on Social Platforms</h3>
                 <div className="flex flex-wrap gap-3">
                   {/* Instagram */}
-                  <a href="https://instagram.com" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group border border-white/30 flex-shrink-0">
+                  <a href="https://www.instagram.com/coastal_seven_consulting/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group border border-white/30 flex-shrink-0">
                     <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4z"/>
                     </svg>
                   </a>
                   
                   {/* Facebook */}
-                  <a href="https://facebook.com" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group border border-white/30 flex-shrink-0">
+                  <a href="https://www.facebook.com/profile.php?id=61574214990654" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group border border-white/30 flex-shrink-0">
                     <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
                   </a>
                   
-                  {/* X (Twitter) */}
-                  <a href="https://twitter.com" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group border border-white/30 flex-shrink-0">
+                  {/* LinkedIn */}
+                  <a href="https://www.linkedin.com/company/coastal-seven-consulting" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group border border-white/30 flex-shrink-0">
                     <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                     </svg>
                   </a>
                   
                   {/* YouTube */}
-                  <a href="https://youtube.com" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group border border-white/30 flex-shrink-0">
+                  <a href="https://www.youtube.com/@CoastalSevenConsulting" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 group border border-white/30 flex-shrink-0">
                     <svg className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                     </svg>

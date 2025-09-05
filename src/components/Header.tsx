@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, User, Menu, X } from 'lucide-react';
+import { ChevronDown, User, Menu, X, Headphones } from 'lucide-react';
 
 const Header = () => {
   const location = useLocation();
@@ -51,7 +51,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`sticky top-0 z-50 pt-2 transition-all duration-300 ${
+    <header className={`fixed top-0 left-0 right-0 z-50 pt-2 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white/20 backdrop-blur-xl border-b border-white/30 shadow-2xl' 
         : 'bg-white/10 backdrop-blur-md'
@@ -154,7 +154,7 @@ const Header = () => {
                   onMouseLeave={handleResourcesMouseLeave}
                 >
                   <Link to="/resources/blog" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">Blog</Link>
-                  <Link to="/resources/case-studies" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">Case Studies</Link>
+                  <Link to="/resources/case-study" className="block px-4 py-2.5 text-gray-700 hover:bg-coastal-light-blue/50 hover:text-coastal-dark transition-colors rounded-lg mx-2 text-sm">Case Studies</Link>
                 </div>
               )}
             </div>
@@ -187,13 +187,13 @@ const Header = () => {
           </nav>
 
           {/* Desktop Action Buttons */}
-          <div className="hidden md:flex items-center space-x-5">
-            <button className="w-10 h-10 bg-coastal-teal rounded-full flex items-center justify-center hover:bg-teal-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
-              <User className="w-5 h-5 text-white" />
-            </button>
-            <button className="bg-gradient-to-r from-coastal-teal to-teal-500 text-white px-6 py-2.5 rounded-lg font-semibold text-sm hover:from-teal-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
-              Schedule a Demo
-            </button>
+          <div className="hidden md:flex items-center space-x-4">
+            <Link to="/contact" className="w-10 h-10 bg-gradient-to-r from-[#063342] to-[#16BAAD] rounded-full flex items-center justify-center hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
+              <img src="/assets/images/support_agent_24dp_5F6368 1.png" alt="Contact Us" className="w-5 h-5" />
+            </Link>
+                          <a href="mailto:consulting@coastalseven.com?subject=Schedule a Demo - Coastal Seven Consulting&body=Hello,%0D%0A%0D%0AI would like to schedule a demo for your AI consulting services.%0D%0A%0D%0APlease let me know your available time slots.%0D%0A%0D%0AThank you!" className="bg-gradient-to-r from-[#063342] to-[#16BAAD] text-white px-6 py-2.5 rounded-lg font-semibold text-sm hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg inline-block">
+                Schedule a Demo
+              </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -244,14 +244,19 @@ const Header = () => {
                   ? 'text-coastal-teal' 
                   : 'text-coastal-dark hover:text-coastal-teal'
               }`}>About Us</Link>
+              <Link to="/contact" className={`transition-colors text-base font-semibold ${
+                location.pathname === '/contact' 
+                  ? 'text-coastal-teal' 
+                  : 'text-coastal-dark hover:text-coastal-teal'
+              }`}>Contact Us</Link>
               
               <div className="pt-4 border-t border-white/20">
-                <button className="w-full bg-gradient-to-r from-coastal-teal to-teal-500 text-white px-6 py-3 rounded-lg font-semibold text-sm mb-3 hover:from-teal-600 hover:to-teal-700 transition-all duration-300">
+                <a href="mailto:consulting@coastalseven.com?subject=Schedule a Demo - Coastal Seven Consulting&body=Hello,%0D%0A%0D%0AI would like to schedule a demo for your AI consulting services.%0D%0A%0D%0APlease let me know your available time slots.%0D%0A%0D%0AThank you!" className="w-full bg-gradient-to-r from-[#063342] to-[#16BAAD] text-white px-6 py-3 rounded-lg font-semibold text-sm mb-3 hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300 inline-block text-center">
                   Schedule a Demo
-                </button>
-                <button className="w-full w-10 h-10 bg-coastal-teal rounded-full flex items-center justify-center mx-auto hover:bg-teal-600 transition-all duration-300">
-                  <User className="w-5 h-5 text-white" />
-                </button>
+                </a>
+                <Link to="/contact" className="w-full w-10 h-10 bg-gradient-to-r from-[#063342] to-[#16BAAD] rounded-full flex items-center justify-center mx-auto hover:from-[#052a35] hover:to-[#14a89c] transition-all duration-300">
+                  <img src="/assets/images/support_agent_24dp_5F6368 1.png" alt="Contact Us" className="w-5 h-5" />
+                </Link>
               </div>
             </nav>
           </div>
